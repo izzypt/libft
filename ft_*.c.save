@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int	ft_strlen(char *str){
+	int counter;
+
+	counter=0;while(str[counter] != '\0')
+	{
+		counter++;
+	}
+
+
+	printf("Length : %d\n", counter);
+
+}
+
+int main()
+{
+	char string[] = "AMore mio";
+	char *ptr = &string[0];
+
+	ft_strlen(ptr);
+}
