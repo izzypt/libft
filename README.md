@@ -1,7 +1,7 @@
 # libft
 libft exercises for 42 Lisbon
 
-You must write your own function implementing the following original ones. 
+You must write your own function implementing the following original ones. ( Follow man description )
 
 They do not require any external functions:
   - isalpha
