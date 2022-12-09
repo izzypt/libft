@@ -6,11 +6,13 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 13:13:29 by smagalha          #+#    #+#             */
-/*   Updated: 2022/11/28 23:53:03 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:17:35 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memset(void *s, int c, size_t n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*p;
 

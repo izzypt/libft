@@ -6,41 +6,30 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 17:54:03 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/08 18:20:25 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:22:15 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char    *strnstr(char *big, char *little, size_t limit)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-    int j;
-    int i;
+	size_t	i;
+	size_t	x;
 
-    i = 0;
-    j = 0;
-    if (little[0] == '\0')
-        return big;
-    while (big[i] != '\0')
-    {
-        if(little[j] == '\0')
-        {
-            return &big[i-j];
-        }
-        if (big[i] == little[j])
-        {
-            i++;
-            j++;
-        }
-        else
-        {
-            i++;
-            j = 0;
-        } 
-        if (i >= limit)
-        {
-            return NULL;
-        }
-    }
-    return NULL;
+	if (little[0] == '\0')
+		return ((char *)big);
+	i = 0;
+	while (i < len && big[i] != '\0')
+	{
+		x = 0;
+		while (little[x] == big[i + x] && (i + x) < len)
+		{
+			if (little[x + 1] == '\0')
+				return ((char *)&big[i]);
+			x++;
+		}
+		i++;
+	}
+	return (0);
 }

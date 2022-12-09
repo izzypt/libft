@@ -6,12 +6,11 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:09:49 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/06 14:15:45 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:26:19 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

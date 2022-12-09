@@ -6,25 +6,26 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 18:27:36 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/08 18:55:56 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:28:18 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *ft_memchr(const void *s, int c, size_t n)
-{
-    unsigned char   *string;
-    unsigned char   character;
-    size_t  i;
+#include "libft.h"
 
-    string = (unsigned char*) s;
-    character = (unsigned char) c;
-    while (i < n)
-    {
-        if (string[i] == c)
-        {
-            return (&string[i]);
-        }
-        i++;
-    }
-    return (0);
+void	*ft_memchr(const void *str, int chr, size_t n)
+{
+	size_t			i;
+	unsigned char	*string;
+	unsigned char	carachter;
+
+	i = 0;
+	string = (unsigned char *)str;
+	carachter = (unsigned char)chr;
+	while (i < n)
+	{
+		if (string[i] == carachter)
+			return ((void *)str + i);
+		i++;
+	}
+	return (NULL);
 }

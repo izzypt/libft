@@ -6,25 +6,24 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 22:28:45 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/08 17:22:57 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:28:24 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-   	char	*match;
+	size_t	i;
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        if (s[i] == c)
-        {
-            match = &s[i];
-            return (match);
-        }
-        i++;
-    }
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }
