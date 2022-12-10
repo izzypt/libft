@@ -6,7 +6,7 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 23:27:06 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/09 20:02:32 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/10 20:16:30 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ void	*ft_calloc(size_t elements, size_t bytes);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int     ft_atoi(const char *s);
 char	*ft_strjoin(char const *prefix, char const *suffix);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif

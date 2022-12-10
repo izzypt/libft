@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 19:58:55 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/10 19:12:43 by smagalha         ###   ########.fr       */
+/*   Created: 2022/12/10 17:41:04 by smagalha          #+#    #+#             */
+/*   Updated: 2022/12/10 19:56:32 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+
 #include "libft.h"
 
-char	*ft_strjoin(char const *prefix, char const *suffix)
-{
-	size_t	len_prefix;
-	size_t	len_suffix;
-	char	*buffer;
 
-	len_prefix = ft_strlen(prefix);
-	len_suffix = ft_strlen(suffix);
-	buffer = (char *)malloc(len_prefix + len_suffix + 1);
-	if (!buffer)
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+	size_t	len;
+	char	*strtrim;
+
+	start = 0;
+	end = ft_strlen(s1);
+	if (!s1 || !set)
 		return (NULL);
-	ft_memcpy(buffer, (const void *)prefix, len_prefix);
-	ft_memcpy(&buffer[len_prefix], (const void *)suffix, len_suffix);
-	buffer[len_prefix + len_suffix] = '\0';
-	return ((char *)buffer);
+	while (s1[start] != '\0' && ft_strchr(set, s1[start]) != 0)
+		start++;
+	while (end >= start && ft_strchr(set, s1[end]) != 0)
+		end--;
+	len = end - start + 1;
+	strtrim = ft_substr(s1, start, len);
+	if (!strtrim)
+		return (NULL);
+	return (strtrim);
 }
