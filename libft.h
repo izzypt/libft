@@ -6,7 +6,7 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 23:27:06 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/10 20:16:30 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/11 22:18:36 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int     ft_atoi(const char *s);
 char	*ft_strjoin(char const *prefix, char const *suffix);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char    *ft_itoa(int n);
 
 #endif

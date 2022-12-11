@@ -6,14 +6,11 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 17:41:04 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/10 19:56:32 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/11 11:25:18 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
-
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

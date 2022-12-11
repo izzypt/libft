@@ -6,13 +6,13 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 13:24:28 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/10 19:17:32 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/11 11:25:07 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-size_t  ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	counter;
 
