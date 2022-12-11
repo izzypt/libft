@@ -6,7 +6,7 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 11:29:27 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/11 22:51:54 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/11 23:03:32 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,53 +15,46 @@
 
 static size_t	ft_decimal_places(int n)
 {
-	size_t	len;
+	size_t	decimal_places;
 
-    len = 0;
-    if (n == 0)
+	decimal_places = 0;
+	if (n == 0)
 		return (1);
 	else if (n < 0)
-    {
-        n = n * -1;
-        len = len + 1;
-    }
-		
-    while (n > 0)
-    {
-        n = n/10;
-        len++;
-    }
-	printf("%ld\n", len);
-    return (len);
+		decimal_places = decimal_places + 1;
+	while (n != 0)
+	{
+		n = n / 10;
+		decimal_places++;
+	}
+	return (decimal_places);
+	
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int nb)
 {
-    char    *string;
-    size_t		len;
+	char		*str;
+	size_t		len;
+	long int	n;
 
-    len = ft_decimal_places(n);
-    string = malloc((len * sizeof(char)) + 1);
-	if (!string)
+	n = nb;
+	len = ft_decimal_places(n);
+	str = (char *)malloc(len + 1);
+	if (!str)
 		return (NULL);
-    string[len] = '\0';
+	str[len] = '\0';
 	if (n == 0)
-		string[0] = '0';
+		str[0] = '0';
 	if (n < 0)
 	{
-		string[0] = '-';
-		n *= -1;
+		str[0] = '-';
+		n = -n;
 	}
-    while (n != 0)
-    {
-        len--;
-        string[len] = n % 10 + '0';
-        n = n / 10;
-    }
-    return (string);
-}
-
-void main()
-{
-	printf("%s", ft_itoa(-2147483648));
+	while (n != 0)
+	{
+		len--;
+		str[len] = n % 10 + '0';
+		n = n / 10;
+	}
+	return (str);
 }
