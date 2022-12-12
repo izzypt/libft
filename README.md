@@ -35,7 +35,7 @@ In the second part, you must develop a set of functions that are either not in t
 or that are part of it but in a different form.
 
   - ft_substr
-   ```
+    ```
     Prototype: char *ft_substr(char const *s, unsigned int start, size_t len);
     Parameters: 
               s: The string from which to create the substring.
@@ -44,7 +44,7 @@ or that are part of it but in a different form.
     Return: value The substring. NULL if the allocation fails.
     External functs: malloc
     Description :  Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.
-   ```
+    ```
   - ft_strjoin
     ```
     Prototype: char *ft_strjoin(char const *s1, char const *s2);
