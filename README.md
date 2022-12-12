@@ -1,5 +1,3 @@
-# libft
-
 ## First Section
 
 You must write your own function implementing the following original ones. ( Follow man description )
