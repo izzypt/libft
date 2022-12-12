@@ -46,6 +46,15 @@ or that are part of it but in a different form.
     Description :  Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.
    ```
   - ft_strjoin
+   ```
+    Prototype: char *ft_strjoin(char const *s1, char const *s2);
+    Parameters: 
+      s1: The prefix string.
+      s2: The suffix string.
+    Return: The new string. NULL if the allocation fails.
+    External functs: malloc
+    Description : Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
+    ```
   - ft_strtrim
   - ft_split
   - ft_itoa
