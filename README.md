@@ -1,5 +1,6 @@
 # libft
-libft exercises for 42 Lisbon
+
+## First Section
 
 You must write your own function implementing the following original ones. ( Follow man description )
 
@@ -30,6 +31,8 @@ In order to implement the two following functions, you will use malloc():
 
   - calloc
   - strdup
+  
+## Second Section
   
 In the second part, you must develop a set of functions that are either not in the libc,
 or that are part of it but in a different form.
@@ -139,3 +142,4 @@ or that are part of it but in a different form.
     External functs: write
     Description : Outputs the integer ’n’ to the given file descriptor.
       
+## BONUS
