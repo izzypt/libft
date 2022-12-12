@@ -34,7 +34,7 @@ In order to implement the two following functions, you will use malloc():
 In the second part, you must develop a set of functions that are either not in the libc,
 or that are part of it but in a different form.
 
-  ## ft_substr
+  ### ft_substr
     
     Prototype: char *ft_substr(char const *s, unsigned int start, size_t len);
     Parameters: 
@@ -54,7 +54,8 @@ or that are part of it but in a different form.
               s2: The suffix string.
     Return: The new string. NULL if the allocation fails.
     External functs: malloc
-    Description : Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
+    Description : Allocates (with malloc(3)) and returns a new string, which is the result of 
+                  the concatenation of ’s1’ and ’s2’.
       
   ### ft_strtrim
       
@@ -76,7 +77,7 @@ or that are part of it but in a different form.
     Return: The array of new strings resulting from the split. NULL if the allocation fails.
     External functs: malloc, free
     Description : Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the
-        character ’c’ as a delimiter. The array must end with a NULL pointer.
+                  character ’c’ as a delimiter. The array must end with a NULL pointer.
       
   ### ft_itoa
   
@@ -85,7 +86,8 @@ or that are part of it but in a different form.
               n: the integer to convert.
     Return: The string representing the integer. NULL if the allocation fails.
     External functs: malloc
-    Description : Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled.
+    Description : Allocates (with malloc(3)) and returns a string representing the integer received as an argument. 
+                  Negative numbers must be handled.
       
   ### ft_strmapi
       
