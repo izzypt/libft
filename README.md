@@ -45,7 +45,7 @@ or that are part of it but in a different form.
     External functs: malloc
     Description :  Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.
     ```
-  ## ft_strjoin
+  ### ft_strjoin
     ```
     Prototype: char *ft_strjoin(char const *s1, char const *s2);
     Parameters: 
@@ -55,7 +55,7 @@ or that are part of it but in a different form.
     External functs: malloc
     Description : Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
       ```
-  ## ft_strtrim
+  ### ft_strtrim
       ```
     Prototype: char *ft_strtrim(char const *s1, char const *set);
     Parameters: 
@@ -65,7 +65,7 @@ or that are part of it but in a different form.
     External functs: malloc
     Description : Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.
       ```
-  ## ft_split
+  ### ft_split
       ```
     Prototype: char **ft_split(char const *s, char c);
     Parameters: 
@@ -76,7 +76,7 @@ or that are part of it but in a different form.
     Description : Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the
         character ’c’ as a delimiter. The array must end with a NULL pointer.
       ```
-  ## ft_itoa
+  ### ft_itoa
       ```
     Prototype: char *ft_itoa(int n);
     Parameters: 
@@ -85,7 +85,7 @@ or that are part of it but in a different form.
     External functs: malloc
     Description : Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled.
       ```
-  ## ft_strmapi
+  ### ft_strmapi
       ```
     Prototype: char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
     Parameters: 
@@ -93,7 +93,7 @@ or that are part of it but in a different form.
     External functs: 
     Description : 
       ```
-  ## ft_striteri
+  ### ft_striteri
       ```
     Prototype: void ft_striteri(char *s, void (*f)(unsigned int, char*));
     Parameters: 
@@ -101,7 +101,7 @@ or that are part of it but in a different form.
     External functs:
     Description : 
       ```
-  ## ft_putchar_fd
+  ### ft_putchar_fd
       ```
     Prototype: void ft_putchar_fd(char c, int fd);
     Parameters: 
@@ -109,7 +109,7 @@ or that are part of it but in a different form.
     External functs: 
     Description : 
       ```
-  ## ft_putstr_fd
+  ### ft_putstr_fd
       ```
     Prototype: void ft_putstr_fd(char *s, int fd);
     Parameters: 
@@ -117,7 +117,7 @@ or that are part of it but in a different form.
     External functs: 
     Description :
       ```
-  ## ft_putendl_fd
+  ### ft_putendl_fd
       ```
     Prototype: void ft_putendl_fd(char *s, int fd);
     Parameters: 
@@ -125,7 +125,7 @@ or that are part of it but in a different form.
     External functs:
     Description :
       ```
-  ## ft_putnbr_fd
+  ### ft_putnbr_fd
     ```
     Prototype: void ft_putnbr_fd(int n, int fd);
     Parameters: 
