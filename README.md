@@ -215,6 +215,11 @@ Structures (also called structs) are a way to group several related variables in
 
 ## Linked Lists
 
+A linked list is a set of dynamically allocated nodes, arranged in such a way that each node contains one value and one pointer. The pointer always points to the next member of the list. If the pointer is NULL, then it is the last node in the list.
+
+A linked list is held using a local pointer variable which points to the first item of the list. If that pointer is also NULL, then the list is considered to be empty.
+
+![image](https://user-images.githubusercontent.com/73948790/207425036-8491312d-fb7c-4cc3-b4db-3a493078e206.png)
 
 
 ## Strings
