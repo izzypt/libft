@@ -165,7 +165,7 @@ or that are part of it but in a different form.
 
 Strings are actually one-dimensional array of characters terminated by a null character '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.
 
-You do not place the null character at the end of a string constant. The C compiler automatically places the '\0' at the end of the string when it initializes the array. Let us try to print the above mentioned string −
+You do not place the null character at the end of a string constant. The C compiler automatically places the '\0' at the end of the string when it initializes the array.
 
 ![image](https://user-images.githubusercontent.com/73948790/207446573-7358d624-60cc-4682-b992-d47aa1136751.png)
 
