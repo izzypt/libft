@@ -216,7 +216,7 @@ To define a structure, you must use the struct statement. The struct statement d
       char city[50];
       char state[20];
       int pin;
-    };
+    } adress1, adress2;
     
 A structure variable can be declared with structure declaration or as a separate declaration like basic types. 
 ###
