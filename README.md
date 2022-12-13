@@ -153,6 +153,11 @@ or that are part of it but in a different form.
 # Useful Concepts to solve those exercises
 
   Below some of the important concepts to understand and solve the exercises above.
+  -Strings & Arrays
+  - ASCII
+  - Dynamic Memory Allocation
+  - Structs
+  - Linked Lists
 
 ## Strings
 
