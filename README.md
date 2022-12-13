@@ -163,9 +163,11 @@ or that are part of it but in a different form.
 
 ## Strings
 
-Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
+Strings are actually one-dimensional array of characters terminated by a null character '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.
 
-![image](https://user-images.githubusercontent.com/73948790/207419313-9e0c60f2-dfa6-4a69-b165-6659a6e9c06a.png)
+You do not place the null character at the end of a string constant. The C compiler automatically places the '\0' at the end of the string when it initializes the array. Let us try to print the above mentioned string −
+
+![image](https://user-images.githubusercontent.com/73948790/207446573-7358d624-60cc-4682-b992-d47aa1136751.png)
 
 ## ASCII
 
