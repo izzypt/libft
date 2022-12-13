@@ -153,11 +153,12 @@ or that are part of it but in a different form.
 
   Below some of the important concepts to understand and solve the exercises above.
   
-  -Strings & Arrays
+  - Strings & Arrays
   - ASCII
   - Dynamic Memory Allocation
   - Structs
   - Linked Lists
+  
 
 ## Strings
 
