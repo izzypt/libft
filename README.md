@@ -158,6 +158,17 @@ The “malloc” or “memory allocation” method in C is used to dynamically a
 
 ![image](https://user-images.githubusercontent.com/73948790/207420150-5605e7d1-417f-4278-828e-c47029d3fae6.png)
 
+The “calloc” or “contiguous allocation” method in C is used to dynamically allocate the specified number of blocks of memory of the specified type. it is very much similar to malloc() but has two different points and these are:
+It initializes each block with a default value ‘0’.
+It has two parameters or arguments as compare to malloc().
+
+![image](https://user-images.githubusercontent.com/73948790/207422630-d25843dc-2eb1-42c4-83c2-3e88d4fef0a8.png)
+
+The “free” method in C is used to dynamically de-allocate the memory. The memory allocated using functions malloc() and calloc() is not de-allocated on their own. Hence the free() method is used, whenever the dynamic memory allocation takes place. It helps to reduce wastage of memory by freeing it.
+
+![image](https://user-images.githubusercontent.com/73948790/207422785-18bc25ae-4f81-463c-8cf7-0ad18c15a8ae.png)
+
+
 
 ### Heap
 
