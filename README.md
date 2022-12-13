@@ -289,5 +289,10 @@ A linked list is held using a local pointer variable which points to the first i
 
 ![image](https://user-images.githubusercontent.com/73948790/207425036-8491312d-fb7c-4cc3-b4db-3a493078e206.png)
 
+Like arrays, a Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers. They include a series of connected nodes. Here, each node stores the data and the address of the next node.
+
+![image](https://user-images.githubusercontent.com/73948790/207447566-53b7e8bf-2cc2-4dc0-90f5-fa6b9aae5896.png)
+
+
 
 
