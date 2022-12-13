@@ -150,7 +150,7 @@ or that are part of it but in a different form.
       
 ## BONUS
 
-## Useful Concepts for those exercises
+## Useful Concepts to solve those exercises
 
 ### Dynamic Memmory allocation
 
