@@ -148,11 +148,11 @@ or that are part of it but in a different form.
     External functs: write
     Description : Outputs the integer ’n’ to the given file descriptor.
       
-## BONUS
 
 # Useful Concepts to solve those exercises
 
   Below some of the important concepts to understand and solve the exercises above.
+  
   -Strings & Arrays
   - ASCII
   - Dynamic Memory Allocation
