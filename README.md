@@ -188,28 +188,37 @@ You can find more information about the heap in this article (https://en.wikiped
 
 Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
 
-### Unlike an array, a structure can contain many different data types (int, float, char, etc.).
+![image](https://user-images.githubusercontent.com/73948790/207426962-ef4da095-968d-4ede-901e-6ea6eb48e126.png)
+###
+    struct address
+    {
+    char name[50];
+    char street[100];
+    char city[50];
+    char state[20];
+    int pin;
+    };
+    
+A structure variable can be declared with structure declaration or as a separate declaration like basic types. 
+###
+    // A variable declaration with structure declaration.
+    struct Point
+    {
+    int x, y;
+    } p1; // The variable p1 is declared with 'Point'
 
-     // Create a structure called myStructure
-    struct myStructure {
-      int myNum;
-      char myLetter;
+
+    // A variable declaration like basic data types
+    struct Point
+    {
+    int x, y;
     };
 
-    int main() {
-      // Create a structure variable of myStructure called s1
-      struct myStructure s1;
-
-      // Assign values to members of s1
-      s1.myNum = 13;
-      s1.myLetter = 'B';
-
-      // Print values
-      printf("My number: %d\n", s1.myNum);
-      printf("My letter: %c\n", s1.myLetter);
-
-      return 0;
+    int main()
+    {
+    struct Point p1; // The variable p1 is declared like a normal variable
     }
+
 
 
 
