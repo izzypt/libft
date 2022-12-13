@@ -184,6 +184,38 @@ Contrast this with stack memory which is where local variables (those defined wi
 
 You can find more information about the heap in this article (https://en.wikipedia.org/wiki/Memory_management#HEAP).
 
+### Structs
+
+Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
+
+###Unlike an array, a structure can contain many different data types (int, float, char, etc.).
+ // Create a structure called myStructure
+struct myStructure {
+  int myNum;
+  char myLetter;
+};
+
+int main() {
+  // Create a structure variable of myStructure called s1
+  struct myStructure s1;
+
+  // Assign values to members of s1
+  s1.myNum = 13;
+  s1.myLetter = 'B';
+
+  // Print values
+  printf("My number: %d\n", s1.myNum);
+  printf("My letter: %c\n", s1.myLetter);
+
+  return 0;
+}
+
+
+
+### Linked Lists
+
+
+
 ### Strings
 
 Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
