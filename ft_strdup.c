@@ -6,24 +6,11 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 17:22:46 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/09 14:50:07 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/13 20:21:21 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int	ft_strlen(char *str)
-{
-	int	counter;
-
-	counter = 0;
-	while (str[counter])
-	{
-		counter++;
-	}
-	return (counter);
-}
+#include "libft.h"
 
 static char	*ft_strcpy(char *dest, char *src)
 {

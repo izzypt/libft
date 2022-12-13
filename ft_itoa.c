@@ -6,7 +6,7 @@
 /*   By: smagalha <smagalha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 11:29:27 by smagalha          #+#    #+#             */
-/*   Updated: 2022/12/11 23:09:02 by smagalha         ###   ########.fr       */
+/*   Updated: 2022/12/13 20:32:05 by smagalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ static size_t	ft_decimal_places(int n)
 		decimal_places++;
 	}
 	return (decimal_places);
-	
 }
 
 char	*ft_itoa(int nb)
