@@ -220,7 +220,6 @@ A structure variable can be declared with structure declaration or as a separate
     }
 
 
-What is a structure pointer? 
   Like primitive types, we can have pointer to a structure. If we have a pointer to structure, members are accessed using arrow ( -> ) operator.
  ###
     #include<stdio.h>
