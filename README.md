@@ -149,3 +149,19 @@ or that are part of it but in a different form.
     Description : Outputs the integer ’n’ to the given file descriptor.
       
 ## BONUS
+
+## Useful COncepts for those exerxises
+
+### Heap
+
+Presumably you mean heap from a memory allocation point of view, not from a data structure point of view (the term has multiple meanings).
+
+A very simple explanation is that the heap is the portion of memory where dynamically allocated memory resides (i.e. memory allocated via malloc). Memory allocated from the heap will remain allocated until one of the following occurs:
+
+The memory is free'd
+The program terminates
+If all references to allocated memory are lost (e.g. you don't store a pointer to it anymore), you have what is called a memory leak. This is where the memory has still been allocated, but you have no easy way of accessing it anymore. Leaked memory cannot be reclaimed for future memory allocations, but when the program ends the memory will be free'd up by the operating system.
+
+Contrast this with stack memory which is where local variables (those defined within a method) live. Memory allocated on the stack generally only lives until the function returns (there are some exceptions to this, e.g. static local variables).
+
+You can find more information about the heap in this article.
