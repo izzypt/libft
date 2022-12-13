@@ -160,6 +160,15 @@ Strings in C are arrays of chracters that should always end with a NULL chracter
 
 ![image](https://user-images.githubusercontent.com/73948790/207419313-9e0c60f2-dfa6-4a69-b165-6659a6e9c06a.png)
 
+## ASCII
+
+Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as 'a' or '@' or an action of some sort.
+ASCII assigns standard numeric values to letters, numerals, punctuation marks, and other characters used in computers.
+ASCII is a 7-bit character set containing 128 characters. It contains the numbers from 0-9, the upper and lower case English letters from A to Z, and some special characters. The character sets used in modern computers, in HTML, and on the Internet, are all based on ASCII.
+
+![image](https://user-images.githubusercontent.com/73948790/207445626-bf5a06f1-ae10-40b3-8f80-840a226ca3e9.png)
+
+
 ## Dynamic Memmory allocation
 
 The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form. It doesn’t Initialize memory at execution time so that it has initialized each block with the default garbage value initially. 
