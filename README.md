@@ -152,6 +152,14 @@ or that are part of it but in a different form.
 
 # Useful Concepts to solve those exercises
 
+  Below some of the important concepts to understand and solve the exercises above.
+
+## Strings
+
+Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
+
+![image](https://user-images.githubusercontent.com/73948790/207419313-9e0c60f2-dfa6-4a69-b165-6659a6e9c06a.png)
+
 ## Dynamic Memmory allocation
 
 The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form. It doesn’t Initialize memory at execution time so that it has initialized each block with the default garbage value initially. 
@@ -251,8 +259,4 @@ A linked list is held using a local pointer variable which points to the first i
 ![image](https://user-images.githubusercontent.com/73948790/207425036-8491312d-fb7c-4cc3-b4db-3a493078e206.png)
 
 
-## Strings
 
-Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
-
-![image](https://user-images.githubusercontent.com/73948790/207419313-9e0c60f2-dfa6-4a69-b165-6659a6e9c06a.png)
