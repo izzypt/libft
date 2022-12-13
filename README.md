@@ -94,17 +94,25 @@ or that are part of it but in a different form.
       
     Prototype: char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
     Parameters: 
-    Return: 
-    External functs: 
-    Description : 
+              s: The string on which to iterate.
+              f: The function to apply to each character.
+    Return: The string created from the successive applications of ’f’. Returns NULL if the allocation fails.
+    External functs: malloc
+    Description : Applies the function ’f’ to each character of the string ’s’, and passing its index 
+                  as first argument to create a new string (with malloc(3)) resulting
+                  from successive applications of ’f’.
       
   ### ft_striteri
       
     Prototype: void ft_striteri(char *s, void (*f)(unsigned int, char*));
     Parameters: 
-    Return: 
-    External functs:
-    Description : 
+              s: The string on which to iterate.
+              f: The function to apply to each character.
+    Return: None
+    External functs: None
+    Description : Applies the function ’f’ on each character of
+                  the string passed as argument, passing its index
+                  as first argument. Each character is passed by address to ’f’ to be modified if necessary.
       
   ### ft_putchar_fd
       
