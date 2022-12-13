@@ -163,7 +163,9 @@ Strings in C are arrays of chracters that should always end with a NULL chracter
 ## ASCII
 
 Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as 'a' or '@' or an action of some sort.
+
 ASCII assigns standard numeric values to letters, numerals, punctuation marks, and other characters used in computers.
+
 ASCII is a 7-bit character set containing 128 characters. It contains the numbers from 0-9, the upper and lower case English letters from A to Z, and some special characters. The character sets used in modern computers, in HTML, and on the Internet, are all based on ASCII.
 
 ![image](https://user-images.githubusercontent.com/73948790/207445626-bf5a06f1-ae10-40b3-8f80-840a226ca3e9.png)
