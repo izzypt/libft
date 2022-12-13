@@ -150,7 +150,7 @@ or that are part of it but in a different form.
       
 ## BONUS
 
-## Useful COncepts for those exerxises
+## Useful COncepts for those exercises
 
 ### Heap
 
@@ -165,3 +165,9 @@ If all references to allocated memory are lost (e.g. you don't store a pointer t
 Contrast this with stack memory which is where local variables (those defined within a method) live. Memory allocated on the stack generally only lives until the function returns (there are some exceptions to this, e.g. static local variables).
 
 You can find more information about the heap in this article.
+
+### Strings
+
+Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
+
+![image](https://user-images.githubusercontent.com/73948790/207419313-9e0c60f2-dfa6-4a69-b165-6659a6e9c06a.png)
