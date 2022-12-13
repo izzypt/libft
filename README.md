@@ -164,7 +164,7 @@ If all references to allocated memory are lost (e.g. you don't store a pointer t
 
 Contrast this with stack memory which is where local variables (those defined within a method) live. Memory allocated on the stack generally only lives until the function returns (there are some exceptions to this, e.g. static local variables).
 
-You can find more information about the heap in this article.
+You can find more information about the heap in this article (https://en.wikipedia.org/wiki/Memory_management#HEAP).
 
 ### Strings
 
