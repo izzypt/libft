@@ -184,7 +184,7 @@ Contrast this with stack memory which is where local variables (those defined wi
 
 You can find more information about the heap in this article (https://en.wikipedia.org/wiki/Memory_management#HEAP).
 
-### Structs
+## Structs
 
 Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
 
