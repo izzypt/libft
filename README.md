@@ -152,6 +152,13 @@ or that are part of it but in a different form.
 
 ## Useful Concepts for those exercises
 
+### Dynamic Memmory allocation
+
+The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form. It doesn’t Initialize memory at execution time so that it has initialized each block with the default garbage value initially. 
+
+![image](https://user-images.githubusercontent.com/73948790/207420150-5605e7d1-417f-4278-828e-c47029d3fae6.png)
+
+
 ### Heap
 
 Presumably you mean heap from a memory allocation point of view, not from a data structure point of view (the term has multiple meanings).
