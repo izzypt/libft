@@ -150,7 +150,7 @@ or that are part of it but in a different form.
       
 ## BONUS
 
-## Useful COncepts for those exercises
+## Useful Concepts for those exercises
 
 ### Heap
 
