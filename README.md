@@ -152,7 +152,7 @@ or that are part of it but in a different form.
 
 ## Useful Concepts to solve those exercises
 
-### Dynamic Memmory allocation
+## Dynamic Memmory allocation
 
 The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form. It doesn’t Initialize memory at execution time so that it has initialized each block with the default garbage value initially. 
 
@@ -170,7 +170,7 @@ The “free” method in C is used to dynamically de-allocate the memory. The me
 
 
 
-### Heap
+## Heap
 
 Presumably you mean heap from a memory allocation point of view, not from a data structure point of view (the term has multiple meanings).
 
@@ -188,35 +188,36 @@ You can find more information about the heap in this article (https://en.wikiped
 
 Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
 
-###Unlike an array, a structure can contain many different data types (int, float, char, etc.).
- // Create a structure called myStructure
-struct myStructure {
-  int myNum;
-  char myLetter;
-};
+### Unlike an array, a structure can contain many different data types (int, float, char, etc.).
 
-int main() {
-  // Create a structure variable of myStructure called s1
-  struct myStructure s1;
+     // Create a structure called myStructure
+    struct myStructure {
+      int myNum;
+      char myLetter;
+    };
 
-  // Assign values to members of s1
-  s1.myNum = 13;
-  s1.myLetter = 'B';
+    int main() {
+      // Create a structure variable of myStructure called s1
+      struct myStructure s1;
 
-  // Print values
-  printf("My number: %d\n", s1.myNum);
-  printf("My letter: %c\n", s1.myLetter);
+      // Assign values to members of s1
+      s1.myNum = 13;
+      s1.myLetter = 'B';
 
-  return 0;
-}
+      // Print values
+      printf("My number: %d\n", s1.myNum);
+      printf("My letter: %c\n", s1.myLetter);
 
-
-
-### Linked Lists
+      return 0;
+    }
 
 
 
-### Strings
+## Linked Lists
+
+
+
+## Strings
 
 Strings in C are arrays of chracters that should always end with a NULL chracter represented by '\0'.
 
