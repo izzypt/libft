@@ -196,6 +196,17 @@ You can find more information about the heap in this article (https://en.wikiped
 
 Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
 
+To define a structure, you must use the struct statement. The struct statement defines a new data type, with more than one member. The format of the struct statement is as follows:
+###
+    struct [structure tag] {
+
+     member definition;
+     member definition;
+     ...
+     member definition;
+    } [one or more structure variables];  
+
+
 ![image](https://user-images.githubusercontent.com/73948790/207426962-ef4da095-968d-4ede-901e-6ea6eb48e126.png)
 ###
     struct address
